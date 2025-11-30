@@ -20,7 +20,7 @@ The server repeatedly sends a base64-encoded PNG. For each image, we’re expect
 
 The primary idea is to segment the mole regions by color. The moles have a consistent brown/orange hue, which is easy to isolate in HSV space. After thresholding, a bit of morphological cleanup removes noise. Then `connectedComponentsWithStats` gives the number of distinct connected regions—each corresponding to a mole.
 
-Here’s the final script I used:
+Here’s the script I used:
 
 ```python
 from pwn import *
