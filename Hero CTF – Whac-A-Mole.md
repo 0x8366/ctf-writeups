@@ -14,6 +14,8 @@ The Whac-A-Mole game is fairly simple. But knowing how many moles there is a cle
 
 The server repeatedly sends a base64-encoded PNG. For each image, we’re expected to count how many moles appear and respond with the integer. If the count is wrong, the server stops; otherwise it keeps sending images until the flag.
 
+**Challenge file**
+
 [Template.py](https://github.com/0x8366/ctf-writeups/blob/main/Hero%20CTF%20%E2%80%93%20Whac-A-Mole.md)
 
 ---
