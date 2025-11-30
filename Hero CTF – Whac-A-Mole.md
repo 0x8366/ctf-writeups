@@ -1,29 +1,30 @@
-This year Hero CTF was kind enough to let our team Lil L3ak merge with L3ak for the event. Since there were no OSINT challenges (my usual category), I decided to take a look at this programming task instead. I ended up solving it and was the 5th solve overall.
+This year Hero CTF was kind enough to let our team **Lil L3ak** merge with **L3ak** for the event. Since there were no OSINT challenges (my usual category), I decided to take a look at this programming task instead. I ended up solving it and was the 5th solve overall.
 
-Challenge Description:
+## Challenge Description
 
 The Whac-A-Mole game is fairly simple. But knowing how many moles there is a clear plus. Can you count them for me?
 
-TCP: nc prog.heroctf.fr 8000
 
-Note to beginners #1:
-Cropping a mole model and doing pixel-perfect comparisons isn’t reliable here due to blending differences between layers of the composed image. The background and the mole sprites have distinct color ranges, so the intended approach is color-based masking.
-OpenCV’s connectedComponentsWithStats can be used to count objects once you have a clean mask.
+**Note to beginners #1:** Cropping a mole model and doing pixel-perfect comparisons isn’t reliable here due to blending differences between layers of the composed image. The background and the mole sprites have distinct color ranges, so the intended approach is **color-based masking**. OpenCV’s `connectedComponentsWithStats` can be used to count objects once you have a clean mask.
 
-Flag format: ^Hero{\S+}$
-Author: Log_s
+**Flag format:** `^Hero{\S+}$`  
+**Author:** Log_s
 
 The server repeatedly sends a base64-encoded PNG. For each image, we’re expected to count how many moles appear and respond with the integer. If the count is wrong, the server stops; otherwise it keeps sending images until the flag.
 
-Solution:
+---
 
-The primary idea is to segment the mole regions by color. The moles have a consistent brown/orange hue, which is easy to isolate in HSV space. After thresholding, a bit of morphological cleanup removes noise. Then connectedComponentsWithStats gives the number of distinct connected regions—each corresponding to a mole.
+## Solution
+
+The primary idea is to segment the mole regions by color. The moles have a consistent brown/orange hue, which is easy to isolate in HSV space. After thresholding, a bit of morphological cleanup removes noise. Then `connectedComponentsWithStats` gives the number of distinct connected regions—each corresponding to a mole.
 
 Here’s the final script I used:
 
+```python
 from pwn import *
 import base64, cv2, numpy as np
 
+# Connect to the challenge server
 io = remote("prog.heroctf.fr", 8000)
 
 def count_moles(img):
@@ -33,7 +34,7 @@ def count_moles(img):
     # Threshold for the mole color range (tuned empirically)
     mask = cv2.inRange(hsv, np.array([5, 80, 40]), np.array([25, 255, 255]))
 
-    # Morphological cleanup
+    # Morphological cleanup to remove noise
     k = np.ones((5, 5), np.uint8)
     mask = cv2.morphologyEx(mask, cv2.MORPH_OPEN, k)
     mask = cv2.morphologyEx(mask, cv2.MORPH_CLOSE, k)
@@ -44,19 +45,22 @@ def count_moles(img):
 while True:
     line = io.recvline()
     if b"IMAGE:" in line:
+        # Decode the base64 image sent by the server
         b64img = io.recvline().strip()
         img = cv2.imdecode(np.frombuffer(base64.b64decode(b64img), np.uint8), cv2.IMREAD_COLOR)
+        
+        # Respond with the count of moles
         io.recvuntil(b">> ")
         io.sendline(str(count_moles(img)).encode())
 
     elif b"Wrong answer!" in line or b"Hero" in line:
+        # Print the result and exit
         print(line.decode().strip())
         io.close()
         break
     else:
         print(line.decode().strip())
-Result
 
-Running the script yields the flag:
 
-Hero{c0l0r_m4sk1ng_4_c1u5t3r1ng_30cbdb51ae9a289fadcaa7be2f534151}
+
+`Hero{c0l0r_m4sk1ng_4_c1u5t3r1ng_30cbdb51ae9a289fadcaa7be2f534151}`
