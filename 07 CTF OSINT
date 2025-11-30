@@ -1,15 +1,20 @@
-While attempting to locate evidence of Mr. X near the campsite where I had eaten, I encountered a second food stall in the vicinity. I was able to capture an image of the location; however, the establishment’s name was unintentionally removed during post-processing. The objective was to use the remaining visual clues in the image to determine the actual camp where the meal took place. 
+While attempting to locate evidence of Mr. X near the campsite where I had eaten, I encountered a second food stall in the vicinity. I was able to capture an image of the location; however, the establishment’s name was unintentionally removed during post-processing.
 
-![Challenge image](https://raw.githubusercontent.com/0x8366/assets-images/7bf45046445c0aba9130a37783d9620ae98d26f8/9be2aa6a427c0d3081fe324313a48735.png)
+The objective was to use the remaining visual clues in the image to determine the actual camp where the meal took place.
 
-Methodology During initial inspection, I identified the text “Three Sheets Brewery” printed on an umbrella in the image. This provided a starting point: an open-source search for the brewery, which led me to a matching business located in Toronto, Canada. From there, I expanded the search area in Google Maps and discovered a reference to Tacomory, a food truck operating in the region. 
+![Challenge image](https://raw.githubusercontent.com/0x8366/assets-images/main/9be2aa6a427c0d3081fe324313a48735.png)
 
-Further image searches for Tacomory produced a publicly available photo that visually aligned with the challenge image—aside from the intentionally removed place name. This supported the conclusion that the truck in the prompt belonged to Tacomory, situated near the town of Tobermory. 
+## Methodology
 
-![Image found via Google search](https://raw.githubusercontent.com/0x8366/assets-images/7bf45046445c0aba9130a37783d9620ae98d26f8/2f802d442ed95a184da9515b89c04298.png)
+During initial inspection, I identified the text “Three Sheets Brewery” printed on an umbrella in the image. This provided a starting point: an open-source search for the brewery, which led me to a matching business located in Toronto, Canada.
 
-To identify the precise camp location, I surveyed nearby campgrounds and found Tobermory Village Campground, which matched both the geographical context and the challenge’s narrative requirements. 
+From there, I expanded the search area in Google Maps and discovered a reference to Tacomory, a food truck operating in the region. Further image searches for Tacomory produced a publicly available photo that visually aligned with the challenge image—aside from the intentionally removed place name. This supported the conclusion that the truck in the prompt belonged to Tacomory, situated near the town of Tobermory.
 
-Flag: 07CTF{Tobermory_Village_Campground} 
+![Image found via Google search](https://raw.githubusercontent.com/0x8366/assets-images/main/2f802d442ed95a184da9515b89c04298.png)
 
-This was a first-blood solve.
+To identify the precise camp location, I surveyed nearby campgrounds and found Tobermory Village Campground, which matched both the geographical context and the challenge’s narrative requirements.
+
+**Flag:** `07CTF{Tobermory_Village_Campground}`
+
+This was a first blood solve. 
+
