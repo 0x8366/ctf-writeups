@@ -54,7 +54,7 @@ while True:
 
 
 
-Flag: `Hero{c0l0r_m4sk1ng_4_c1u5t3r1ng_30cbdb51ae9a289fadcaa7be2f534151}`
+**Flag**: `Hero{c0l0r_m4sk1ng_4_c1u5t3r1ng_30cbdb51ae9a289fadcaa7be2f534151}`
 
 
 
