@@ -18,3 +18,5 @@ To identify the precise camp location, I surveyed nearby campgrounds and found T
 
 This was a first blood solve. 
 
+Credits:
+vivig
