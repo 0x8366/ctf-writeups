@@ -4,7 +4,7 @@ For Hero CTF **L3ak** was kind enough to let **Lil L3ak** merge together for the
 
 The Whac-A-Mole game is fairly simple. But knowing how many moles there is a clear plus. Can you count them for me?
 
-TCP: nc prog.heroctf.fr 8000
+`nc prog.heroctf.fr 8000`
 
 
 **Note to beginners #1:** Cropping a mole model and doing pixel-perfect comparisons isn’t reliable here due to blending differences between layers of the composed image. The background and the mole sprites have distinct color ranges, so the intended approach is **color-based masking**. OpenCV’s `connectedComponentsWithStats` can be used to count objects once you have a clean mask.
