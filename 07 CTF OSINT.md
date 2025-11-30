@@ -1,4 +1,4 @@
-While attempting to locate evidence of Mr. X near the campsite where I had eaten, I encountered a second food stall in the vicinity. I was able to capture an image of the location; however, the establishment’s name was unintentionally removed during post-processing.
+Challenge description: While attempting to locate evidence of Mr. X near the campsite where I had eaten, I encountered a second food stall in the vicinity. I was able to capture an image of the location; however, the establishment’s name was unintentionally removed during post-processing.
 
 The objective was to use the remaining visual clues in the image to determine the actual camp where the meal took place.
 
