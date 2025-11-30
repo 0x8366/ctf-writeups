@@ -1,4 +1,4 @@
-This year Hero CTF was kind enough to let our team **Lil L3ak** merge with **L3ak** for the event. Since there were no OSINT challenges (my usual category), I decided to take a look at this programming task instead. I ended up solving it and was the 5th solve overall.
+For Hero CTF **L3ak** was kind enough to let **Lil L3ak** merge together for the event. Since there were no OSINT challenges (my main category), I decided to take a look at this programming task instead. I ended up solving it and was the 5th solve overall.
 
 ## Challenge Description
 
