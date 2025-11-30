@@ -16,7 +16,7 @@ The server repeatedly sends a base64-encoded PNG. For each image, we’re expect
 
 **Challenge file**
 
-[Template.py](https://github.com/0x8366/ctf-writeups/blob/main/Hero%20CTF%20%E2%80%93%20Whac-A-Mole.md)
+[template.py](https://github.com/0x8366/ctf-writeups/blob/main/Hero%20CTF%20%E2%80%93%20Whac-A-Mole.md)
 
 ---
 
