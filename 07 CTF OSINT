@@ -2,7 +2,7 @@ While attempting to locate evidence of Mr. X near the campsite where I had eaten
 
 The objective was to use the remaining visual clues in the image to determine the actual camp where the meal took place.
 
-![Challenge image](https://raw.githubusercontent.com/0x8366/assets-images/main/9be2aa6a427c0d3081fe324313a48735.png)
+![Challenge image](https://github.com/0x8366/assets-images/blob/main/9be2aa6a427c0d3081fe324313a48735.png?raw=true)
 
 ## Methodology
 
@@ -10,7 +10,7 @@ During initial inspection, I identified the text “Three Sheets Brewery” prin
 
 From there, I expanded the search area in Google Maps and discovered a reference to Tacomory, a food truck operating in the region. Further image searches for Tacomory produced a publicly available photo that visually aligned with the challenge image—aside from the intentionally removed place name. This supported the conclusion that the truck in the prompt belonged to Tacomory, situated near the town of Tobermory.
 
-![Image found via Google search](https://raw.githubusercontent.com/0x8366/assets-images/main/2f802d442ed95a184da9515b89c04298.png)
+![Image found via Google search](https://github.com/0x8366/assets-images/blob/main/2f802d442ed95a184da9515b89c04298.png?raw=true)
 
 To identify the precise camp location, I surveyed nearby campgrounds and found Tobermory Village Campground, which matched both the geographical context and the challenge’s narrative requirements.
 
