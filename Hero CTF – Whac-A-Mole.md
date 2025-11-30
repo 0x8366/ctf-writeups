@@ -26,42 +26,30 @@ Here’s the script I used:
 from pwn import *
 import base64, cv2, numpy as np
 
-# Connect to the challenge server
 io = remote("prog.heroctf.fr", 8000)
 
 def count_moles(img):
-    # Convert to HSV for more stable color thresholding
     hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
-
-    # Threshold for the mole color range (tuned empirically)
     mask = cv2.inRange(hsv, np.array([5, 80, 40]), np.array([25, 255, 255]))
-
-    # Morphological cleanup to remove noise
     k = np.ones((5, 5), np.uint8)
     mask = cv2.morphologyEx(mask, cv2.MORPH_OPEN, k)
     mask = cv2.morphologyEx(mask, cv2.MORPH_CLOSE, k)
-
-    # Count connected components (subtract 1 for background)
     return cv2.connectedComponentsWithStats(mask)[0] - 1
 
 while True:
     line = io.recvline()
     if b"IMAGE:" in line:
-        # Decode the base64 image sent by the server
         b64img = io.recvline().strip()
         img = cv2.imdecode(np.frombuffer(base64.b64decode(b64img), np.uint8), cv2.IMREAD_COLOR)
-        
-        # Respond with the count of moles
         io.recvuntil(b">> ")
         io.sendline(str(count_moles(img)).encode())
-
     elif b"Wrong answer!" in line or b"Hero" in line:
-        # Print the result and exit
         print(line.decode().strip())
         io.close()
         break
     else:
         print(line.decode().strip())
+
 ```
 
 
