@@ -8,9 +8,9 @@ For Nite CTF 2025 we had a couple images we would have to geoguess and use a min
 
 ## Solution
 
-The location I was tasked with finding here was obviously in Taiwan. Having done a previous CTF with a very similar challenge. To find this spot I knew I had to located the pole, and in doing so used this really awesome tool
+The location I was tasked with finding here was obviously in Taiwan. In a previous CTF there was a very similar challenge (L3ak CTF). To find this spot I knew I had to locate the pole, and in doing so used this really awesome tool
 https://0d.lv/toolbox/taipower 
-Basically, you just take the bottom two rows of numbers and enter that into the tool and it will give you the correct coordinates, pretty neat huh!
+Basically, you just take the bottom two rows and enter that into the tool and it will give you the correct coordinates, pretty neat huh!
 
 ![Corn coords](https://github.com/0x8366/assets-images/blob/main/cornsolve.png?raw=true)
 
