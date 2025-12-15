@@ -8,13 +8,13 @@ The objective was to use the remaining visual clues in the image to determine th
 
 ## Solution
 
-During initial inspection, I identified the text “Three Sheets Brewery” printed on an umbrella in the image. This provided a starting point: an open-source search for the brewery, which led me to a matching business located in Toronto, Canada.
+During initial inspection, I identified the text “Three Sheets Brewery” printed on an umbrella in the image. This provided a starting point: a quick Google search for the brewery, which led to a matching business located in Toronto, Canada.
 
-From there, I expanded the search area in Google Maps and discovered a reference to Tacomory, a food truck operating in the region. Further image searches for Tacomory produced a publicly available photo that visually aligned with the challenge image—aside from the intentionally removed place name. This supported the conclusion that the truck in the prompt belonged to Tacomory, situated near the town of Tobermory.
+From there, I searched the area in Google Maps and discovered a reference to Tacomory, a food truck operating in the region. Further image searches for Tacomory produced a publicly available photo that visually aligned with the challenge image. This supported the conclusion that the truck belonged to Tacomory, situated near the town of Tobermory.
 
 ![Image found via Google search](https://github.com/0x8366/assets-images/blob/main/2f802d442ed95a184da9515b89c04298.png?raw=true)
 
-To identify the precise camp location, I surveyed nearby campgrounds and found Tobermory Village Campground, which matched both the geographical context and the challenge’s narrative requirements.
+As for the campground, there were a few in the area near Tacomory and one of them ended up being the correct one. 
 
 **Flag:** `07CTF{Tobermory_Village_Campground}`
 
