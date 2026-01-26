@@ -23,13 +23,10 @@ From there used the tool Sherlock to discover Willow1124's blog at: https://will
 
 ![Challenge image](https://github.com/0x8366/assets-images/blob/main/sushi5.png?raw=true)
 
-On the blog there is another image which is of Stockholm's Central Station. A few key sentences stood out in the blog: *I was meeting Ken to eat sushi*, *the name of the place we’re meeting up at consists of four parts*, and *I’d gotten off one stop too early*
+On the blog there is another image which is of Stockholm's Central Station. A couple key sentences stood out in the blog: *I was meeting Ken to eat sushi*, *the name of the place we’re meeting up at consists of four parts*, *I’d gotten off one stop too early*, and *gotta walk*. From there, I looked for the next closest stop which was Hötorget subway station.
 
-Because it says they gotten off one stop early, I traced stops along a train/subway route from the station near the general location or "home station" (mentioned in the blog) which was Thorildsplan transit station:
 
-![Challenge image](https://github.com/0x8366/assets-images/blob/main/sushi1.png?raw=true)
-
-From there we can see that the stop before Stockholm Central is Hötorget subway station. I looked around for a sushi restaurant that was four parts and came across this place: `Soyokafe Sushi and Ramen`
+I then looked around for a sushi restaurant that was four parts in name near Hötorget station and came across this place: `Soyokafe Sushi and Ramen`
 https://www.soyokaze.se/soyokafe
 
 This indeed was the correct location:
