@@ -15,18 +15,17 @@ Author: Zwique
 
 ## Methodology/Solution
 
-The challenge image provided above was just the starting point here to get a general location as well as the "home station": Stockholm, Sweden. Thorildsplan transit station.
+The challenge image provided above was just the starting point here to get a general location: Stockholm, Sweden.
 
 From there used the tool Sherlock to discover Willow1124's blog at: https://willow1124.blogspot.com
 
-![Challenge image](https://github.com/0x8366/assets-images/blob/main/sushi5.png?raw=true)
-
 ![Challenge image](https://github.com/0x8366/assets-images/blob/main/sushi4.png?raw=true)
 
+![Challenge image](https://github.com/0x8366/assets-images/blob/main/sushi5.png?raw=true)
 
 On the blog there is another image which is of Stockholm's Central Station. A few key sentences stood out in the blog: *I was meeting Ken to eat sushi*, *the name of the place we’re meeting up at consists of four parts*, and *I’d gotten off one stop too early*
 
-Because it says they gotten off one stop early, I traced stops along train/subway routes from the station near the general location of the provided challenge image:
+Because it says they gotten off one stop early, I traced stops along a train/subway route from the station near the general location or "home station" (mentioned in the blog) which was Thorildsplan transit station:
 
 ![Challenge image](https://github.com/0x8366/assets-images/blob/main/sushi1.png?raw=true)
 
