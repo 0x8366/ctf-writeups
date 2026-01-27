@@ -35,3 +35,6 @@ This indeed was the correct location:
 
 **Flag:** `0xL4ugh{kafe@soyokaze.se}`
 
+
+
+Credits: filip, 0wl, suvoni, decryptor
